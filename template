@@ -1,0 +1,17 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+
+from utils.utils import parse_input
+
+def p1(input):
+    pass
+
+def p2(input):
+    pass
+
+if __name__ == "__main__":
+    input = parse_input(24, 2)
+    print("p1:", p1(input))
+    print("p2:", p2(input))
