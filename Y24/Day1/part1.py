@@ -2,21 +2,21 @@ def main():
     with open('input.txt', 'r') as file:
         lines = file.readlines()
 
-        right = []
-        left = []
+        l = []
+        r = []
 
         for line in lines:
             parts = line.split()
-            right.append(int(parts[1]))
-            left.append(int(parts[0]))
+            r.append(int(parts[1]))
+            l.append(int(parts[0]))
 
-        right.sort()
-        left.sort()
+        r.sort()
+        l.sort()
 
         diff = 0
 
-        for i in range(len(left)):
-            diff += abs(left[i] - right[i])
+        for i in range(len(l)):
+            diff += abs(l[i] - r[i])
 
         print(diff)
             
